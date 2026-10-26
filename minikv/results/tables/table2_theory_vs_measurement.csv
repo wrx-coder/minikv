@@ -1,0 +1,15 @@
+strategy,operation,scenario,theory,min_scale,max_scale,min_ns,max_ns,time_ratio
+contig,allocate,empty,O(1) for tested constant-size operation,500,8000,55.5,55.8,1.0054054054054054
+contig,allocate,high_end,Theta(N),500,8000,248.0,3031.3,12.222983870967743
+contig,append,empty,O(1) for tested constant-size operation,500,8000,28.0333,26.6667,0.9512508338297667
+contig,append,high_end,O(1) for tested constant-size operation,500,8000,27.9,26.4333,0.9474301075268817
+contig,append_new,empty,O(1) for tested constant-size operation,500,8000,42.1333,42.0,0.996836231674234
+contig,append_new,high_end,O(1) for tested constant-size operation,500,8000,27.3333,27.7667,1.0158561168977034
+contig,lookup,half_hit,expected O(L*(1+R/4093)),10,10000,6.3534,22.8122,3.5905499417634656
+paged,allocate,empty,Theta(N),500,8000,181.133,1973.93,10.897682918076772
+paged,allocate,high_end,Theta(N),500,8000,299.533,4539.83,15.15636006717123
+paged,append,empty,Theta(N),500,8000,133.367,2118.1,15.881739860685178
+paged,append,high_end,Theta(N),500,8000,133.467,2120.6,15.888571706863866
+paged,append_new,empty,Theta(N),500,8000,155.4,2148.73,13.827091377091376
+paged,append_new,high_end,Theta(N),500,8000,301.267,6535.77,21.694277833284097
+paged,lookup,half_hit,expected O(L*(1+R/4093)),10,10000,6.3485,23.4879,3.6997558478380723

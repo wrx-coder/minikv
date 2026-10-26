@@ -1,0 +1,16 @@
+# table3_metrics：实验数据表
+
+说明：原始 CSV 保留稳定的英文字段；本表采用中文表头。均值和标准差按随机种子汇总，空标准差表示仅有一次实验。
+
+| 指标                         | 定义                                                          | 选择理由                                                     |
+|:---------------------------|:------------------------------------------------------------|:---------------------------------------------------------|
+| Allocation failure         | no_space / attempted ALLOC or APPEND                        | Separates capacity failures from API validation          |
+| Utilization                | stored tokens / (used blocks * S)                           | Allocated capacity actually filled                       |
+| Unused space               | used blocks * S - stored tokens                             | Internal fragmentation cost                              |
+| External fragmentation     | 1-largest free run/free blocks                              | Physical distribution, not necessarily harmful for paged |
+| Pure fragmentation failure | no_space AND pre_free_blocks>=needed_blocks                 | Failure despite sufficient total free blocks             |
+| Occupancy                  | used blocks/N                                               | Physical block pressure                                  |
+| Completed requests         | successful generation of entire target output               | Real decoded throughput in feedback model                |
+| Rejected / preempted       | failed arrival / termination after failed append            | Admission versus growth failure                          |
+| Metadata estimate          | N*sizeof(Block)+used*sizeof(BlockNode)+4093*sizeof(pointer) | Small blocks incur more metadata                         |
+| Operation time             | median of five warm benchmark repetitions                   | Empirical scale dependence                               |

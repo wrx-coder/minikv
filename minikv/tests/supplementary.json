@@ -1,0 +1,11 @@
+{
+  "official_generator_cases_per_strategy": 2000,
+  "explicit_edge_cases_per_strategy": 5,
+  "actual_collision_bucket": 2765,
+  "collision_ids": [
+    "C1693",
+    "C1730",
+    "C2063",
+    "C2100"
+  ]
+}

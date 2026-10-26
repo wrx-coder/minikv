@@ -1,0 +1,9 @@
+strategy,S,loss_threshold,first_tested_pressure,note
+contig,2,0.1,0.3,"grid threshold, not exact transition"
+contig,4,0.1,0.3,"grid threshold, not exact transition"
+contig,8,0.1,0.3,"grid threshold, not exact transition"
+contig,16,0.1,0.3,"grid threshold, not exact transition"
+paged,2,0.1,1.1,"grid threshold, not exact transition"
+paged,4,0.1,1.1,"grid threshold, not exact transition"
+paged,8,0.1,1.1,"grid threshold, not exact transition"
+paged,16,0.1,0.9,"grid threshold, not exact transition"

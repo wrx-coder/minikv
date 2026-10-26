@@ -1,0 +1,9 @@
+strategy,S,ok,pre_free_blocks,pre_largest_free_run,needed_blocks
+contig,2,0,32,1,16
+paged,2,1,32,1,16
+contig,4,0,32,1,16
+paged,4,1,32,1,16
+contig,8,0,32,1,16
+paged,8,1,32,1,16
+contig,16,0,32,1,16
+paged,16,1,32,1,16

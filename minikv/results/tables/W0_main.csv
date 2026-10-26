@@ -1,0 +1,9 @@
+strategy,S,alloc_fail_rate_mean,alloc_fail_rate_std,append_fail_rate_mean,append_fail_rate_std,utilization_mean,utilization_std,unused_mean,unused_std,ext_frag_mean,ext_frag_std,no_space_mean,no_space_std,pure_frag_fail_mean,pure_frag_fail_std
+contig,2,0.2,,0.0,,0.9835566250000001,,0.375,,0.0625,,1.0,,1.0,
+contig,4,0.2,,1.0,,0.86302075,,2.5,,0.0,,2.0,,1.0,
+contig,8,0.4,,0.0,,0.776041625,,4.625,,0.0,,2.0,,0.0,
+contig,16,0.4,,0.0,,0.62109375,,10.625,,0.0,,2.0,,0.0,
+paged,2,0.0,,1.0,,1.0,,0.0,,0.03125,,1.0,,0.0,
+paged,4,0.4,,0.0,,0.880208125,,2.125,,0.0,,2.0,,0.0,
+paged,8,0.4,,0.0,,0.776041625,,4.625,,0.0,,2.0,,0.0,
+paged,16,0.4,,0.0,,0.62109375,,10.625,,0.0,,2.0,,0.0,

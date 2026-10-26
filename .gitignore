@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.exe
+*.dll
+*.o
+*.docx
+report/
+minikv/results/raw/
+minikv/workloads/*.trace
+minikv/workloads/*_arrivals.csv
